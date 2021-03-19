@@ -49,7 +49,7 @@
 		</div>
 		
 		<div class="menu" style="border-bottom-width: 3px;">
-			<div id="id">비밀번호</div>
+			<div id="id">비밀번호2</div>
 			<span>
 				<input type="password" name="password" size="30">
 			</span>
