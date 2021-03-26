@@ -16,7 +16,7 @@
 	<form id="joinform" name="joinform" action="${root}/member/updateOk.do" method="post" 
 		onsubmit="return createFrom(this)">
 
-		<h4 style="text-align: center;">회원가입(*필수입력사항입니다.)</h4>
+		<h4 style="text-align: center;">회원수정(*필수입력사항입니다.)</h4>
 		<div class="menu" style="border-bottom-width: 0px;">
 		
 		<input type="hidden" name="num" value="${memberDto.num}"/>

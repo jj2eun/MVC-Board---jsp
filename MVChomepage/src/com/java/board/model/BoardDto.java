@@ -15,7 +15,11 @@ public class BoardDto {
 	private int sequenceNumber;
 	private int	sequenceLevel;
 	
+	private long fileSize;
+	private String fileName;
+	private String path;
 	
+
 	public BoardDto() {
 		super();
 	}
@@ -101,6 +105,29 @@ public class BoardDto {
 	}
 	public void setSequenceLevel(int sequenceLevel) {
 		this.sequenceLevel = sequenceLevel;
+	}
+	public long getFileSize() {
+		return fileSize;
+	}
+	
+	public void setFileSize(long fileSize) {
+		this.fileSize = fileSize;
+	}
+	
+	public String getFileName() {
+		return fileName;
+	}
+	
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
+	
+	public String getPath() {
+		return path;
+	}
+	
+	public void setPath(String path) {
+		this.path = path;
 	}
 	
 	@Override

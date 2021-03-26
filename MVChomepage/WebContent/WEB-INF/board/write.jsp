@@ -12,7 +12,7 @@
 </head>
 <body>
 	<form action="${root}/board/writeOk.do" id="createform" name="createform" method="post" onsubmit="return boardCheck(this)">
-		<div id="title">글 목록</div>
+		<div id="title"><a href="${root}/board/list.do">글 목록</a></div>
 		<div class="menu" style="border-bottom-width: 0px;">
 			<input type="hidden" name="boardNumber" value="${boardNumber }">
 			<input type="hidden" name="groupNumber" value="${groupNumber }">
@@ -25,7 +25,7 @@
 			</span>
 		</div>
 		
-		<div class="menu" style="border-bottom-width: 3px;">
+		<div class="menu" style="border-bottom-width: 0px;">
 			
 			<div id="id">제목</div>
 			<span>
@@ -33,7 +33,7 @@
 			</span>
 		</div>
 		
-		<div class="menu" style="border-bottom-width: 3px;">
+		<div class="menu" style="border-bottom-width: 0px;">
 			
 			<div id="id">이메일</div>
 			<span>
@@ -41,15 +41,15 @@
 			</span>
 		</div>
 		
-		<div class="content" style="border-bottom-width: 3px;">
+		<div class="content" style="border-bottom-width: 0px;">
 			<div id="text">내용</div>
 			<span>
 				<textarea name="content" rows="12" cols="65"></textarea>
 			</span>
 		</div>
 		
-		<div class="menu" style="border-bottom-width: 3px;">
-			<div id="id">비밀번호2</div>
+		<div class="menu" style="border-bottom-width: 0px;">
+			<div id="id">비밀번호</div>
 			<span>
 				<input type="password" name="password" size="30">
 			</span>
@@ -59,7 +59,7 @@
 			<span> 
 				<input type="submit" value="글쓰기">
 				<input type="reset" value="다시작성">
-				<input type="button" value="목록보기">
+				<input type="button" value="목록보기" onclick="location.href='${root}/board/list.do?pageNumber=${pageNumber}'">
 			</span>
 		</div>
 

@@ -24,7 +24,7 @@ public class WriteOkCommand implements Command{
 		System.out.println(Integer.parseInt(request.getParameter("sequenceLevel")));
 		
 		int check = 0;
-		for(int i=0; i<50; i++) {
+		for(int i=1; i<2; i++) {
 			boardDto.setBoardNumber(Integer.parseInt(request.getParameter("boardNumber")));
 			boardDto.setGroupNumber(Integer.parseInt(request.getParameter("groupNumber")));
 			boardDto.setSequenceNumber(Integer.parseInt(request.getParameter("sequenceNumber")));
